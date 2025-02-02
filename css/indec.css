@@ -1,122 +1,91 @@
 @media (max-width: 768px) {
-body {
-    font-family: "Poppins", serif;
-    background-color: #f5f5f5;
+  * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+  }
 
-.top-bar {
+  /* Top-bar (senza modifiche particolari) */
+  .top-bar {
     display: flex;
-    padding: 10px;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
     background-color: #f8f3f9;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-    justify-content: flex-end;
-}
+    height: 50px;
+  }
 
-.document-list {
+  /* Document list e relativi elementi */
+  .document-list {
     padding: 20px;
-}
-
-.document-item {
+  }
+  .document-item {
     margin-bottom: 20px;
-}
-
-.user-info {
+  }
+  .user-info {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
     gap: 10px;
-}
-
-.user-info img {
+    margin-bottom: 5px;
+  }
+  .user-info img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #ddd;
-}
-
-.user-info i {
-    font-size: 18px;
-}
-
-.user-name {
+  }
+  .user-info .user-name {
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #080303;
-
-}
-
-.document-card {
+  }
+  .document-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     margin-left: 2%;
-    background: #ECE6F0;
+    background: #ece6f0;
     border-radius: 28px;
-
-}
-
-.actions {
+    width: 90%;
+  }
+  .actions {
     display: flex;
     justify-content: flex-end;
-    text-align: right;
-    margin-left: 257px;
     margin-top: 10px;
     gap: 30px;
-}
-
-.document-card .actions i {
-position: relative;
-   font-size: 28px;
+  }
+  .actions i {
+    font-size: 28px;
     cursor: pointer;
-    
-}
+  }
 
-.bottom-nav {
-    display: flex;
-    justify-content: space-around;
+  .document-card {
+    width: 90%;
+    height: auto;
+  }
+  .top-bar,
+  .bottom-nav {
+    padding: 15px;
+  }
+  .document-list {
     padding: 10px;
-    background-color: #f8f3f9;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-item {
-    text-align: center;
-    padding: 5px 10px;
-}
-
-.nav-item i {
+  }
+  .user-info {
+    font-size: 14px;
+  }
+  .actions i {
     font-size: 18px;
-}
-
-.nav-item.active {
-    color: #6a0dad;
-    font-weight: bold;
-}
-
-    .document-card {
-        width: 90%;
-        height: auto;
-    }
-    .top-bar, .bottom-nav {
-        padding: 15px;
-    }
-    .document-list {
-        padding: 10px;
-    }
-    .user-info {
-        font-size: 14px;
-    }
-    .actions i {
-        font-size: 18px;
-    }
+  }
 }
